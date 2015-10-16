@@ -1,0 +1,35 @@
+[user]
+    email = dolohow@outlook.com
+    name = Łukasz Żarnowiecki
+[core]
+    editor = nvim
+[credential]
+    helper = cache --timeout=6048000
+[diff]
+    tool = vimdiff
+[difftool]
+    prompt = false
+[alias]
+    b = branch
+    c = commit
+    co = checkout
+    d = diff
+    dt = diftool
+    m = merge
+    pl = pull
+    ps = push
+    r = reset
+    s = status
+[merge]
+    tool = vimdiff
+    conflictstyle = diff3
+[mergetool "vimdiff"]
+    prompt = true
+[mergetool "vimdiff"]
+    cmd = nvim -d $BASE $LOCAL $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
+[push]
+    default = simple
+[github]
+    user = dolohow@outlook.com
+[log]
+    abbrevCommit = true
