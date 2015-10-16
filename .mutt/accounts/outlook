@@ -1,0 +1,15 @@
+set from      = "dolohow@outlook.com"
+set realname  = "dolohow"
+
+set spoolfile = "+outlook/Inbox"
+set mbox      = "+outlook/Archives"
+set record    = "+outlook/Sent"
+set postponed = "+outlook/Drafts"
+
+unset record
+
+# color status green default
+
+macro index D \
+    "<save-message>+outlook/Deleted<enter>" \
+    "move message to the trash"

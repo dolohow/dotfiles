@@ -1,0 +1,13 @@
+set from      = "leopold_stuff@aol.com"
+set realname  = "Łukasz Żarnowiecki"
+
+set spoolfile = "+aol/INBOX"
+set mbox      = "+aol/Archives"
+set record    = "+aol/Sent"
+set postponed = "+aol/Drafts"
+
+# color status green default
+
+macro index D \
+    "<save-message>+aol/Trash<enter>" \
+    "move message to the trash"

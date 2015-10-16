@@ -1,0 +1,15 @@
+set from      = "puksi@student.agh.edu.pl"
+set realname  = "Łukasz Żarnowiecki"
+
+set spoolfile = "+AGH/INBOX"
+set mbox      = "+AGH/Archives"
+set record    = "+AGH/Sent"
+set postponed = "+AGH/Drafts"
+
+set signature = "                        Łukasz"
+
+# color status green default
+
+macro index D \
+    "<save-message>+AGH/Trash<enter>" \
+    "move message to the trash"
