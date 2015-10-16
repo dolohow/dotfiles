@@ -1,0 +1,80 @@
+[general]
+accounts = AGH,outlook,aol
+maxsyncaccounts = 3
+fsync = false
+sockettimeout = 10
+
+[mbnames]
+enabled = yes
+filename = ~/.mutt/mailboxes
+header = "mailboxes "
+peritem = "+%(accountname)s/%(foldername)s"
+sep = " "
+footer = "\n"
+
+[notifications]
+summary = "[{account}] Nowa wiadomość"
+notifier = "notify-send"
+
+[Account outlook]
+localrepository = Local-outlook
+remoterepository = Remote-outlook
+status_backend = sqlite
+autorefresh = 1
+status_backend = sqlite
+
+[Repository Local-outlook]
+type = Maildir
+localfolders = ~/Mail/outlook
+
+[Repository Remote-outlook]
+type = IMAP
+remotehost = imap-mail.outlook.com
+remoteport = 993
+remoteuser = dolohow@outlook.com
+ssl = yes
+sslcacertfile = /etc/ssl/certs/ca-certificates.crt
+holdconnectionopen = yes
+idlefolders = ['Inbox']
+
+[Account aol]
+localrepository = Local-aol
+remoterepository = Remote-aol
+status_backend = sqlite
+autorefresh = 1
+status_backend = sqlite
+
+[Repository Local-aol]
+type = Maildir
+localfolders = ~/Mail/aol
+
+[Repository Remote-aol]
+type = IMAP
+remotehost = imap.aol.com
+remoteport = 993
+remoteuser = leopold_stuff@aol.com
+ssl = yes
+sslcacertfile = /etc/ssl/certs/ca-certificates.crt
+holdconnectionopen = yes
+idlefolders = ['INBOX']
+
+[Account AGH]
+localrepository = Local-AGH
+remoterepository = Remote-AGH
+status_backend = sqlite
+autorefresh = 1
+status_backend = sqlite
+
+[Repository Local-AGH]
+type = Maildir
+localfolders = ~/Mail/AGH
+
+[Repository Remote-AGH]
+type = IMAP
+remotehost = poczta.agh.edu.pl
+remoteport = 993
+remoteuser = puksi@student.agh.edu.pl
+ssl = yes
+sslcacertfile = /etc/ssl/certs/ca-certificates.crt
+holdconnectionopen = yes
+idlefolders = ['INBOX']
