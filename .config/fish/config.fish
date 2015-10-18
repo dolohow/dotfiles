@@ -3,7 +3,9 @@ set -x _JAVA_OPTIONS -Dawt.useSystemAAFontSettings=setting
 set -x ANDROID_HOME  ~/.android/sdk
 set -x GOPATH        ~/go
 
-set -x PATH          ~/.gem/ruby/2.2.0/bin $PATH
+set -x PATH          $PATH \
+                     ~/.gem/ruby/2.2.0/bin \
+                     $GOPATH/bin
 
 alias studia         "cd ~/static/Drive/studia"
 alias nethogs        "nethogs enp4s0"
