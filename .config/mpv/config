@@ -1,0 +1,6 @@
+hwdec=vdpau #=vaapi
+vo=opengl-hq
+sub-codepage=enca:pl
+sub-scale-with-window=yes
+audio-file-auto=fuzzy
+#sub-scale=1.2
