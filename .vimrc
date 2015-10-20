@@ -13,6 +13,7 @@ set t_Co=256                      " Set number of colors to 256
 set shell=bash                    " Some plugins require bash to run properly
 set background=dark               " Use dark background color scheme
 filetype plugin indent on         " Enable file type based indentation
+set mouse=""                      " Disable mouse
 
 ""
 "" Whitespace
