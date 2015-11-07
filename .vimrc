@@ -68,17 +68,8 @@ set backupdir=~/.vim/_backup//          " where to put backup files.
 set directory=~/.vim/_temp//            " where to put swap files.
 
 ""
-"" Plugins configuration
+"" Other
 ""
-
-let g:airline_powerline_fonts=1
-
-let g:go_snippet_engine="neosnippet"
-
-let g:deoplete#enable_at_startup = 1
-
-autocmd! BufWritePost * Neomake         " Run neomake on every save
-
 
 " Toggle paste mode
 nmap <silent> <F4> :set invpaste<CR>:set paste?<CR>
@@ -86,14 +77,6 @@ imap <silent> <F4> <ESC>:set invpaste<CR>:set paste?<CR>
 
 " format the entire file
 nnoremap <leader>fef :normal! gg=G``<CR>
-
-map <leader>n :NERDTreeToggle<CR>
-map <leader>rt :TagbarToggle<CR>
-nnoremap <leader>g :GundoToggle<CR>
-
-imap <C-k> <Plug>(neosnippet_expand_or_jump)
-smap <C-k> <Plug>(neosnippet_expand_or_jump)
-xmap <C-k> <Plug>(neosnippet_expand_target)
 
 " Remember the cursor position after exit
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
@@ -105,21 +88,27 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 call plug#begin('~/.vim/plugged')
 
 Plug 'fatih/vim-go'
+  let g:go_snippet_engine="neosnippet"
 Plug 'ap/vim-css-color'
 Plug 'kien/ctrlp.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'mattn/gist-vim' | Plug 'mattn/webapi-vim'
 Plug 'mhinz/vim-grepper'
 Plug 'simnalamburt/vim-mundo'                        " Gundo fork
+  nnoremap <leader>g :GundoToggle<CR>
 Plug 'chrisbra/NrrwRgn'
 Plug 'scrooloose/nerdtree'
+  map <leader>n :NERDTreeToggle<CR>
 Plug 'majutsushi/tagbar'
+  map <leader>rt :TagbarToggle<CR>
 Plug 'airblade/vim-gitgutter'
 Plug 'bronson/vim-trailing-whitespace'
 Plug 'troydm/zoomwintab.vim'
 Plug 'bling/vim-airline'
+  let g:airline_powerline_fonts=1
 Plug 'heavenshell/vim-jsdoc'
 Plug 'benekastah/neomake'
+  autocmd! BufWritePost * Neomake         " Run neomake on every save
 Plug 'digitaltoad/vim-jade'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'godlygeek/tabular'
@@ -130,7 +119,11 @@ Plug 'jelera/vim-javascript-syntax'
 Plug 'moll/vim-node'
 Plug 'Shougo/neocomplete.vim'
 Plug 'Shougo/deoplete.nvim'
+  let g:deoplete#enable_at_startup = 1
 Plug 'Shougo/neosnippet'
+  imap <C-k> <Plug>(neosnippet_expand_or_jump)
+  smap <C-k> <Plug>(neosnippet_expand_or_jump)
+  xmap <C-k> <Plug>(neosnippet_expand_target)
 Plug 'Shougo/neosnippet-snippets'
 Plug 'Shougo/context_filetype.vim'
 Plug 'tpope/vim-fugitive'
