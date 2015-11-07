@@ -13,6 +13,7 @@
     b = branch
     c = commit
     co = checkout
+    cp = cherry-pick
     d = diff
     dt = diftool
     m = merge
