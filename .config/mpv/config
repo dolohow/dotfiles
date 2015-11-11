@@ -1,4 +1,4 @@
-hwdec=vdpau #=vaapi
+hwdec=auto
 vo=opengl-hq:backend=x11
 sub-codepage=enca:pl
 audio-file-auto=fuzzy
