@@ -3,3 +3,4 @@ vo=opengl-hq
 sub-codepage=enca:pl
 audio-file-auto=fuzzy
 #sub-scale=1.2
+sub-auto=fuzzy
