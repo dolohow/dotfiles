@@ -109,6 +109,7 @@ Plug 'bling/vim-airline'
 Plug 'heavenshell/vim-jsdoc'
 Plug 'benekastah/neomake'
   autocmd! BufWritePost * Neomake         " Run neomake on every save
+  let g:neomake_cpp_clang_args = ["-std=c++14", "-Wextra", "-Wall"]
 Plug 'digitaltoad/vim-jade'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'godlygeek/tabular'
