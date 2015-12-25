@@ -41,6 +41,7 @@ set smartcase   " ... unless they contain at least one capital letter
 ""
 "" Wild settings
 ""
+set wildmenu  " Enables commandline TAB completion"
 
 " Disable output and VCS files
 set wildignore+=*.o,*.out,*.obj,.git,*.rbc,*.rbo,*.class,.svn,*.gem
