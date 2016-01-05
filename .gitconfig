@@ -2,7 +2,7 @@
     email = dolohow@outlook.com
     name = Łukasz Żarnowiecki
 [core]
-    editor = nvim
+    editor = vim
 [credential]
     helper = cache --timeout=6048000
 [diff]
