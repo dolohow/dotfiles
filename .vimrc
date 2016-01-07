@@ -88,12 +88,10 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 call plug#begin('~/.vim/plugged')
 
 Plug 'fatih/vim-go'
-  let g:go_snippet_engine="neosnippet"
 Plug 'ap/vim-css-color'
 Plug 'kien/ctrlp.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'mattn/gist-vim' | Plug 'mattn/webapi-vim'
-Plug 'mhinz/vim-grepper'
 Plug 'simnalamburt/vim-mundo'                        " Gundo fork
   nnoremap <leader>g :GundoToggle<CR>
 Plug 'chrisbra/NrrwRgn'
@@ -104,29 +102,26 @@ Plug 'majutsushi/tagbar'
 Plug 'airblade/vim-gitgutter'
 Plug 'bronson/vim-trailing-whitespace'
 Plug 'troydm/zoomwintab.vim'
-Plug 'bling/vim-airline'
-  let g:airline_powerline_fonts=1
 Plug 'heavenshell/vim-jsdoc'
-Plug 'benekastah/neomake'
-  autocmd! BufWritePost * Neomake         " Run neomake on every save
-  let g:neomake_cpp_clang_args = ["-std=c++14", "-Wextra", "-Wall"]
 Plug 'digitaltoad/vim-jade'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'godlygeek/tabular'
 Plug 'dag/vim-fish'
-Plug 'tpope/vim-haml'
-Plug 'mxw/vim-jsx' | Plug 'pangloss/vim-javascript'
-Plug 'jelera/vim-javascript-syntax'
 Plug 'moll/vim-node'
-Plug 'Shougo/neocomplete.vim'
-Plug 'Shougo/deoplete.nvim'
-  let g:deoplete#enable_at_startup = 1
-Plug 'Shougo/neosnippet'
-  imap <C-k> <Plug>(neosnippet_expand_or_jump)
-  smap <C-k> <Plug>(neosnippet_expand_or_jump)
-  xmap <C-k> <Plug>(neosnippet_expand_target)
-Plug 'Shougo/neosnippet-snippets'
-Plug 'Shougo/context_filetype.vim'
-Plug 'tpope/vim-fugitive'
+Plug 'VisIncr'
+Plug 'qpkorr/vim-bufkill'
+Plug 'derekwyatt/vim-fswitch'
+Plug 'derekwyatt/vim-protodef'
+Plug 'honza/vim-snippets' | Plug 'SirVer/ultisnips' | Plug 'Valloric/YouCompleteMe'
+  let g:UltiSnipsExpandTrigger='<c-\>'
+  let g:UltiSnipsJumpForwardTrigger='<c-n>'
+  let g:UltiSnipsJumpBackwardTrigger='<c-p>'
+Plug 'noahfrederick/vim-hemisu'
+Plug 'rking/ag.vim'
+Plug 'whatyouhide/vim-gotham'
+Plug 'scrooloose/syntastic'
+Plug 'xoria256.vim'
 
 call plug#end()
+
+colorscheme hemisu
