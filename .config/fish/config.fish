@@ -7,6 +7,8 @@ set -x PATH          $PATH \
                      ~/.gem/ruby/2.2.0/bin \
                      $GOPATH/bin
 
+set -x SSH_AUTH_SOCK ~/.ssh/agent.sock
+
 alias studia         "cd ~/static/Drive/studia"
 alias nethogs        "nethogs enp4s0"
 
