@@ -13,6 +13,7 @@ set shell=bash                    " Some plugins require bash to run properly
 set background=dark               " Use dark background color scheme
 filetype plugin indent on         " Enable file type based indentation
 set mouse=""                      " Disable mouse
+set hidden                        " Put unsaved buffers into background (no "must save first")
 
 ""
 "" Whitespace
