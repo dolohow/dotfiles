@@ -34,3 +34,5 @@
     user = dolohow@outlook.com
 [log]
     abbrevCommit = true
+[include]
+    path = .gitconfig.work
