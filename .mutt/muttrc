@@ -1,5 +1,5 @@
 set shell    = bash
-set editor   = nvim
+set editor   = vim
 set sendmail = /usr/bin/msmtp
 
 set folder   = "~/Mail"
