@@ -5,11 +5,3 @@
    XF86Back
 "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause"
    XF86AudioPlay
-
-# qmmp
-"dbus-send --print-reply --dest=org.mpris.MediaPlayer2.qmmp /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next"
-   XF86Forward
-"dbus-send --print-reply --dest=org.mpris.MediaPlayer2.qmmp /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous"
-   XF86Back
-"dbus-send --print-reply --dest=org.mpris.MediaPlayer2.qmmp /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause"
-   XF86AudioPlay
