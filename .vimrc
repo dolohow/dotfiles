@@ -83,6 +83,10 @@ nnoremap <leader>fef :normal! gg=G``<CR>
 " Remember the cursor position after exit
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
+" vim-latexsuite plugin
+set grepprg=grep\ -nH\ $*
+let g:tex_flavor = "latex"'
+
 ""
 "" Vimplug
 ""
