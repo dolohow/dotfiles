@@ -85,7 +85,7 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 
 " vim-latexsuite plugin
 set grepprg=grep\ -nH\ $*
-let g:tex_flavor = "latex"'
+let g:tex_flavor = "latex"
 
 ""
 "" Vimplug
