@@ -36,3 +36,5 @@
     abbrevCommit = true
 [include]
     path = config.work
+[rebase]
+	autosquash = true
