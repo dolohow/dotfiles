@@ -30,8 +30,6 @@
     cmd = vim -d $BASE $LOCAL $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
 [push]
     default = current
-[github]
-    user = dolohow@outlook.com
 [log]
     abbrevCommit = true
 [include]
