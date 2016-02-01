@@ -26,7 +26,6 @@
     conflictstyle = diff3
 [mergetool "vimdiff"]
     prompt = true
-[mergetool "vimdiff"]
     cmd = vim -d $BASE $LOCAL $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
 [push]
     default = current
