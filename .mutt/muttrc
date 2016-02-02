@@ -16,7 +16,7 @@ set quit
 set sort_aux = reverse-last-date-received
 
 set sidebar_visible = yes
-set sidebar_width   = 20
+set sidebar_width   = 22
 set sidebar_folderindent = yes
 bind index,pager \CP sidebar-prev
 bind index,pager \CN sidebar-next
