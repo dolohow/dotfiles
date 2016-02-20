@@ -7,7 +7,3 @@ set record    = "+aol/Sent"
 set postponed = "+aol/Drafts"
 
 # color status green default
-
-macro index D \
-    "<save-message>+aol/Trash<enter>" \
-    "move message to the trash"

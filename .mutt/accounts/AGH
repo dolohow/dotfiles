@@ -9,7 +9,3 @@ set postponed = "+AGH/Drafts"
 set signature = "                        Łukasz"
 
 # color status green default
-
-macro index D \
-    "<save-message>+AGH/Trash<enter>" \
-    "move message to the trash"

@@ -9,7 +9,3 @@ set postponed = "+outlook/Drafts"
 unset record
 
 # color status green default
-
-macro index D \
-    "<save-message>+outlook/Deleted<enter>" \
-    "move message to the trash"
