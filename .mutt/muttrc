@@ -14,8 +14,9 @@ set spoolfile     = "+outlook/Inbox"
 set delete # Do not prompt about purging emails
 set quit   # Do not ask for confirmation while exiting mutt
 
-set sort_aux = last-date-received
-set sort     = threads
+set sort_aux       = last-date-received
+set sort           = threads
+set strict_threads = yes                # Do not thread message by subject
 
 set beep_new         # Notify about new messages
 set sleep_time = 0   # Speed up folders switch
