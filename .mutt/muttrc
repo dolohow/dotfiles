@@ -8,7 +8,7 @@ set envelope_from = yes
 set timeout       = 15             # How often check for new messages
 set header_cache  = ~/.cache/mutt
 
-set spoolfile     = "+outlook/Inbox"
+set spoolfile     = "+aol/INBOX"
 
 # Convenience
 set delete # Do not prompt about purging emails
