@@ -17,6 +17,7 @@ set quit   # Do not ask for confirmation while exiting mutt
 set sort_aux       = last-date-received
 set sort           = threads
 set strict_threads = yes                # Do not thread message by subject
+unset collapse_unread
 
 set beep_new         # Notify about new messages
 set sleep_time = 0   # Speed up folders switch
