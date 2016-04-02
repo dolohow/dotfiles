@@ -21,6 +21,7 @@ localrepository = Local-outlook
 remoterepository = Remote-outlook
 status_backend = sqlite
 autorefresh = 1
+quick = 10
 status_backend = sqlite
 
 [Repository Local-outlook]
@@ -35,14 +36,15 @@ remoteuser = dolohow@outlook.com
 ssl = yes
 sslcacertfile = /etc/ssl/certs/ca-certificates.crt
 holdconnectionopen = yes
-idlefolders = ['Inbox']
+keepalive = 60
 
 [Account aol]
 localrepository = Local-aol
 remoterepository = Remote-aol
 status_backend = sqlite
-autorefresh = 1
+autorefresh = 10
 status_backend = sqlite
+quick = 10
 
 [Repository Local-aol]
 type = Maildir
@@ -57,13 +59,15 @@ ssl = yes
 sslcacertfile = /etc/ssl/certs/ca-certificates.crt
 holdconnectionopen = yes
 idlefolders = ['INBOX']
+keepalive = 60
 
 [Account AGH]
 localrepository = Local-AGH
 remoterepository = Remote-AGH
 status_backend = sqlite
-autorefresh = 1
+autorefresh = 10
 status_backend = sqlite
+quick = 10
 
 [Repository Local-AGH]
 type = Maildir
@@ -78,3 +82,4 @@ ssl = yes
 sslcacertfile = /etc/ssl/certs/ca-certificates.crt
 holdconnectionopen = yes
 idlefolders = ['INBOX']
+keepalive = 60
