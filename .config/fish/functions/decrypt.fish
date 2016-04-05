@@ -1,10 +1,6 @@
 function decrypt
-  if [ $argv ]
-    if [ $argv = "-d" ]
-      fusermount -u ~/static/Private
-    else
-      echo "Unkown option $argv"
-    end
+  if contains -- -d $argv
+    fusermount -u ~/static/Private
   else
     set -lx ENCFS6_CONFIG ~/.encfs6.xml
     encfs ~/static/.sync/ ~/static/Private
