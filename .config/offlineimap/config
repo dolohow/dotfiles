@@ -1,5 +1,5 @@
 [general]
-accounts = AGH,outlook,aol
+accounts = outlook,aol
 maxsyncaccounts = 3
 fsync = false
 sockettimeout = 10
@@ -55,29 +55,6 @@ type = IMAP
 remotehost = imap.aol.com
 remoteport = 993
 remoteuser = leopold_stuff@aol.com
-ssl = yes
-sslcacertfile = /etc/ssl/certs/ca-certificates.crt
-holdconnectionopen = yes
-idlefolders = ['INBOX']
-keepalive = 60
-
-[Account AGH]
-localrepository = Local-AGH
-remoterepository = Remote-AGH
-status_backend = sqlite
-autorefresh = 10
-status_backend = sqlite
-quick = 10
-
-[Repository Local-AGH]
-type = Maildir
-localfolders = ~/Mail/AGH
-
-[Repository Remote-AGH]
-type = IMAP
-remotehost = poczta.agh.edu.pl
-remoteport = 993
-remoteuser = puksi@student.agh.edu.pl
 ssl = yes
 sslcacertfile = /etc/ssl/certs/ca-certificates.crt
 holdconnectionopen = yes

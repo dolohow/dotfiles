@@ -50,7 +50,6 @@ alternative_order text/plain text/html
 
 # Hooks for multiple accounts
 folder-hook outlook/* source ~/.mutt/accounts/outlook
-folder-hook AGH/* source ~/.mutt/accounts/AGH
 folder-hook aol/* source ~/.mutt/accounts/aol
 
 source ~/.mutt/mailboxes
