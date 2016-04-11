@@ -48,4 +48,7 @@ source ~/.mutt/colors.zenburn
 source ~/.mutt/aliases
 
 # GPG settings
-source /usr/share/doc/mutt/samples/gpg.rc
+set crypt_replysign
+set crypt_opportunistic_encrypt
+set crypt_replysignencrypted
+set crypt_use_gpgme
