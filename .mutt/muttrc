@@ -15,6 +15,9 @@ set spoolfile     = "+aol/INBOX"
 set delete # Do not prompt about purging emails
 set quit   # Do not ask for confirmation while exiting mutt
 
+set pager_stop # Stop at the end instead of displaying next mail
+set pager_index_lines = 6
+
 set sort_aux       = last-date-received
 set sort           = threads
 set strict_threads = yes                # Do not thread message by subject
