@@ -26,6 +26,12 @@ set smart_wrap       # Wrap by word boundary
 set fast_reply = yes # Do not ask about recipient and subject
 set include = yes    # Always include original message
 
+# Custom headers
+unmy_hdr * # Clear all headers (useful when using multiple accounts)
+unset use_domain
+unset user_agent
+my_hdr User-Agent: Every email client sucks, this one just sucks less.
+
 # Sidebar
 set sidebar_visible      = yes
 set sidebar_width        = 22
