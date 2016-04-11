@@ -7,6 +7,7 @@ set mbox_type     = Maildir
 set envelope_from = yes
 set timeout       = 15             # How often check for new messages
 set header_cache  = ~/.cache/mutt
+set send_charset  = "utf-8"
 
 set spoolfile     = "+aol/INBOX"
 
