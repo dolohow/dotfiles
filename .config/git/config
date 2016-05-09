@@ -34,5 +34,6 @@
 	email = dolohow@outlook.com
 	name = Łukasz Żarnowiecki
 	signingkey = 9BBDEBA1
+	useconfigonly = true
 [include]
 	path = config.work
