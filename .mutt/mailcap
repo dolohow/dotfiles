@@ -1,4 +1,6 @@
 text/html; w3m -I %{charset} -T text/html; copiousoutput;
 image/gif; gwenview %s
 image/jpg; gwenview %s
-#application/pgp-keys; pgp -f < %s ; copiousoutput
+image/jpeg; gwenview %s
+image/png; gwenview %s
+application/pdf; okular %s
