@@ -1,38 +1,38 @@
 [alias]
-    b = branch
-    c = commit
-    co = checkout
-    cp = cherry-pick
-    d = diff
-    dt = diftool
-    m = merge
-    pl = pull
-    ps = push
-    r = reset
-    s = status
+	b = branch
+	c = commit
+	co = checkout
+	cp = cherry-pick
+	d = diff
+	dt = diftool
+	m = merge
+	pl = pull
+	ps = push
+	r = reset
+	s = status
 [core]
-    editor = vim
+	editor = vim
 [credential]
-    helper = cache --timeout=6048000
+	helper = cache --timeout=6048000
 [diff]
-    tool = vimdiff
+	tool = vimdiff
 [difftool]
-    prompt = false
+	prompt = false
 [log]
-    abbrevCommit = true
+	abbrevCommit = true
 [merge]
-    tool = vimdiff
-    conflictstyle = diff3
+	tool = vimdiff
+	conflictstyle = diff3
 [mergetool "vimdiff"]
-    prompt = true
-    cmd = vim -d $BASE $LOCAL $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
+	prompt = true
+	cmd = vim -d $BASE $LOCAL $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
 [push]
-    default = current
+	default = current
 [rebase]
 	autosquash = true
 [user]
-    email = dolohow@outlook.com
-    name = Łukasz Żarnowiecki
+	email = dolohow@outlook.com
+	name = Łukasz Żarnowiecki
 
 [include]
-    path = config.work
+	path = config.work
