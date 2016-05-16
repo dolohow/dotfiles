@@ -58,3 +58,5 @@ sslcacertfile = /etc/ssl/certs/ca-certificates.crt
 holdconnectionopen = yes
 idlefolders = ['INBOX']
 keepalive = 60
+folderfilter = lambda foldername: foldername not in [
+    'Saved', 'Saved/SavedIMs', 'Notebook']
