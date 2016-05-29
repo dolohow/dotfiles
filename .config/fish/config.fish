@@ -3,9 +3,7 @@ set -x _JAVA_OPTIONS -Dawt.useSystemAAFontSettings=setting
 set -x ANDROID_HOME  ~/.android/sdk
 set -x GOPATH        ~/go
 
-set -x PATH          $PATH \
-                     ~/.gem/ruby/2.2.0/bin \
-                     $GOPATH/bin
+set -x PATH          $PATH
 
 set -x SSH_AUTH_SOCK ~/.ssh/agent.sock
 
