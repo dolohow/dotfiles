@@ -38,7 +38,9 @@ my_hdr User-Agent: Every email client sucks, this one just sucks less.
 # Sidebar
 set sidebar_visible      = yes
 set sidebar_width        = 22
-set sidebar_folderindent = yes
+set sidebar_folder_indent = yes
+set sidebar_indent_string = ' '
+set sidebar_short_path = yes      # Abbreviate mailbox paths
 bind index,pager \CP sidebar-prev
 bind index,pager \CN sidebar-next
 bind index,pager \CO sidebar-open
