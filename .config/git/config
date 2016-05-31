@@ -37,3 +37,8 @@
 	useconfigonly = true
 [include]
 	path = config.work
+[sendemail]
+	smtpEncryption = tls
+	smtpServer = smtp-mail.outlook.com
+	smtpUser = dolohow@outlook.com
+	smtpServerPort = 587
