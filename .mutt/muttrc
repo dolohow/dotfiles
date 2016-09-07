@@ -12,11 +12,19 @@ set send_charset  = "utf-8"
 set spoolfile     = "+aol/INBOX"
 
 # Convenience
-set delete # Do not prompt about purging emails
-set quit   # Do not ask for confirmation while exiting mutt
+set delete          # Do not prompt about purging emails
+set quit            # Do not ask for confirmation while exiting mutt
+set askcc
+unset mime_forward
+unset confirmappend # Do not prompt when appending messages
+unset wait_key      # Do not ask for pressking key
+unset pipe_decode   # Strip headers and eval mimes when piping
 
 set pager_stop # Stop at the end instead of displaying next mail
 set pager_index_lines = 6
+set tilde      # Pad blank lines like vim
+set menu_scroll
+unset markers  # Do not show markers when lines are wrapped
 
 set sort_aux       = last-date-received
 set sort           = threads
@@ -48,7 +56,7 @@ bind index,pager \CO sidebar-open
 # Use web browser when dealing with html emails
 set mailcap_path  = ~/.mutt/mailcap
 auto_view text/html
-alternative_order text/plain text/html
+alternative_order text/plain text/endriched text/html
 
 # Hooks for multiple accounts
 folder-hook outlook/* source ~/.mutt/accounts/outlook
