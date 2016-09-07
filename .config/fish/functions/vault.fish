@@ -1,4 +1,4 @@
-function decrypt
+function vault
   if contains -- -d $argv
     fusermount -u ~/static/Private
   else
