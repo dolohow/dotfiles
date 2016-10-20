@@ -1,5 +1,6 @@
 hwdec=auto
-vo=opengl-hq:backend=x11
+profile=opengl-hq
+opengl-backend=x11
 sub-codepage=enca:pl
 audio-file-auto=fuzzy
 sub-auto=fuzzy
