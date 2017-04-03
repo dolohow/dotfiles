@@ -6,7 +6,5 @@ set -x PATH          $PATH
 
 set -x SSH_AUTH_SOCK ~/.ssh/agent.sock
 
-alias nethogs        "nethogs enp4s0"
-
 source               .servers
 source               .work
