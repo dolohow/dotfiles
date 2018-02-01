@@ -1,5 +1,1 @@
-hwdec=auto
-profile=opengl-hq
-opengl-backend=x11
-audio-file-auto=fuzzy
 sub-auto=fuzzy
