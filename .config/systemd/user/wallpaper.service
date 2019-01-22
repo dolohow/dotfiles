@@ -1,6 +1,0 @@
-[Unit]
-Description=Change wallpaper
-
-[Service]
-Type=oneshot
-ExecStart=/usr/bin/python %h/git/Daily-Reddit-Wallpaper/change_wallpaper_reddit.py
