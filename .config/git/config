@@ -31,7 +31,7 @@
 [rebase]
 	autosquash = true
 [user]
-	email = dolohow@outlook.com
+	email = lukasz@zarnowiecki.pl
 	name = Łukasz Żarnowiecki
 	signingkey = 9BBDEBA1
 	useconfigonly = true
