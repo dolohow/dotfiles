@@ -1,66 +1,73 @@
 # Basic
 set shell         = bash
 set editor        = vim
-set sendmail      = /usr/bin/msmtp
-set folder        = "~/Mail"
+set use_from      = yes
+set folder        = ~/.mail
 set mbox_type     = Maildir
 set envelope_from = yes
-set timeout       = 15             # How often check for new messages
+set timeout       = 15                  # How often check for new messages
 set header_cache  = ~/.cache/mutt
-set send_charset  = "utf-8"
-
-set spoolfile     = "+aol/INBOX"
+set send_charset  = utf-8
+set spoolfile     = +zarnowiecki/INBOX
 
 # Convenience
-set delete          # Do not prompt about purging emails
-set quit            # Do not ask for confirmation while exiting mutt
+set delete                  # Do not prompt about purging emails
+set quit                    # Do not ask for confirmation while exiting mutt
 set askcc
-unset mime_forward
-unset confirmappend # Do not prompt when appending messages
-unset wait_key      # Do not ask for pressking key
-unset pipe_decode   # Strip headers and eval mimes when piping
+set mime_forward = ask-yes
+unset confirmappend         # Do not prompt when appending messages
+unset wait_key              # Do not ask for pressking key
+unset pipe_decode           # Strip headers and eval mimes when piping
 
-set pager_stop # Stop at the end instead of displaying next mail
+set pager_stop             # Stop at the end instead of displaying next mail
 set pager_index_lines = 6
-set tilde      # Pad blank lines like vim
+set tilde                  # Pad blank lines like vim
 set menu_scroll
-unset markers  # Do not show markers when lines are wrapped
+unset markers              # Do not show markers when lines are wrapped
 
 set sort_aux       = last-date-received
 set sort           = threads
-set strict_threads = yes                # Do not thread message by subject
+set strict_threads = yes                 # Do not thread message by subject
 unset collapse_unread
 
-set beep_new         # Notify about new messages
-set sleep_time = 0   # Speed up folders switch
-set smart_wrap       # Wrap by word boundary
-set fast_reply = yes # Do not ask about recipient and subject
-set include = yes    # Always include original message
+set beep_new          # Notify about new messages
+set sleep_time = 0    # Speed up folders switch
+set smart_wrap        # Wrap by word boundary
+set fast_reply = yes  # Do not ask about recipient and subject
+set include    = yes  # Always include original message
 
 # Custom headers
-unmy_hdr * # Clear all headers (useful when using multiple accounts)
 unset use_domain
 unset user_agent
 my_hdr User-Agent: Every email client sucks, this one just sucks less.
 
 # Sidebar
-set sidebar_visible      = yes
-set sidebar_width        = 22
+set sidebar_visible       = yes
+set sidebar_width         = 22
 set sidebar_folder_indent = yes
 set sidebar_indent_string = ' '
-set sidebar_short_path = yes      # Abbreviate mailbox paths
+set sidebar_short_path    = yes  # Abbreviate mailbox paths
 bind index,pager \CP sidebar-prev
 bind index,pager \CN sidebar-next
 bind index,pager \CO sidebar-open
 
-# Use web browser when dealing with html emails
+# Vim like navigation
+bind pager j next-line
+bind pager k previous-line
+bind attach,index,pager \CD next-page
+bind attach,index,pager \CU previous-page
+bind pager g top
+bind pager G bottom
+bind attach,index g first-entry
+bind attach,index G last-entry
+
 set mailcap_path  = ~/.mutt/mailcap
 auto_view text/html
 alternative_order text/plain text/endriched text/html
 
 # Hooks for multiple accounts
-folder-hook outlook/* source ~/.mutt/accounts/outlook
-folder-hook aol/* source ~/.mutt/accounts/aol
+source ~/.mutt/accounts/zarnowiecki
+folder-hook zarnowiecki/* source ~/.mutt/accounts/zarnowiecki
 
 source ~/.mutt/mailboxes
 source ~/.mutt/colors.zenburn

@@ -1,6 +1,6 @@
-text/html; w3m -I %{charset} -T text/html; copiousoutput;
-image/gif; gwenview %s
-image/jpg; gwenview %s
-image/jpeg; gwenview %s
-image/png; gwenview %s
 application/pdf; okular %s
+image/gif; gwenview %s
+image/jpeg; gwenview %s
+image/jpg; gwenview %s
+image/png; gwenview %s
+text/html; w3m -I %{charset} -T text/html; copiousoutput;

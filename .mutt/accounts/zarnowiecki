@@ -1,0 +1,20 @@
+source "gpg -dq ~/.mutt/pwds.gpg |"
+
+set my_user     = lukasz@zarnowiecki.pl
+set my_host     = zarnowiecki.pl
+set my_port     = 587
+set my_realname = 'Łukasz Żarnowiecki'
+
+set from     = $my_user
+set realname = $my_realname
+
+set smtp_url            = smtp://$my_user@$my_host:$my_port
+set ssl_force_tls       = yes
+set ssl_starttls        = yes
+set smtp_authenticators = plain
+
+set spoolfile = +zarnowiecki/INBOX
+set mbox      = +zarnowiecki/Archive
+set record    = +zarnowiecki/Sent
+set postponed = +zarnowiecki/Drafts
+set trash     = +zarnowiecki/Trash
