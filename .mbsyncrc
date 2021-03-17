@@ -1,0 +1,21 @@
+IMAPAccount zarnowiecki
+Host zarnowiecki.pl
+User lukasz@zarnowiecki.pl
+PassCmd "gpg2 -q --for-your-eyes-only --no-tty -d ~/.mailpass.gpg"
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+SSLType IMAPS
+
+IMAPStore zarnowiecki-remote
+Account zarnowiecki
+
+MaildirStore zarnowiecki-local
+SubFolders Verbatim
+Path ~/.mail/zarnowiecki/
+Inbox ~/.mail/zarnowiecki/INBOX
+
+Channel zarnowiecki
+Patterns *
+Far :zarnowiecki-remote:
+Near :zarnowiecki-local:
+SyncState *
+Create Both
