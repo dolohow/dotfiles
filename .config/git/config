@@ -1,44 +1,46 @@
 [alias]
-	b = branch
-	c = commit
-	co = checkout
-	cp = cherry-pick
-	d = diff
-	dt = diftool
-	m = merge
-	pl = pull
-	ps = push
-	r = reset
-	s = status
+  b = branch
+  c = commit
+  co = checkout
+  cp = cherry-pick
+  d = diff
+  dt = difftool
+  dc = diff --cached
+  m = merge
+  pl = pull
+  ps = push
+  r = reset
+  s = status
 [core]
-	editor = vim
+  editor = vim
 [credential]
-	helper = cache --timeout=6048000
+  helper = cache --timeout=6048000
 [diff]
-	tool = vimdiff
+  tool = vimdiff
 [difftool]
-	prompt = false
+  prompt = false
 [log]
-	abbrevCommit = true
+  abbrevCommit = true
 [merge]
-	tool = vimdiff
-	conflictstyle = diff3
+  tool = vimdiff
+  conflictstyle = diff3
 [mergetool "vimdiff"]
-	prompt = true
-	cmd = vim -d $BASE $LOCAL $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
+  prompt = true
+  cmd = vim -d $BASE $LOCAL $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
 [push]
-	default = current
+  default = current
 [rebase]
-	autosquash = true
+  autosquash = true
 [user]
-	email = lukasz@zarnowiecki.pl
-	name = Łukasz Żarnowiecki
-	signingkey = 9BBDEBA1
-	useconfigonly = true
+  email = lukasz@zarnowiecki.pl
+  name = Łukasz Żarnowiecki
+  signingkey = 9BBDEBA1
+  useconfigonly = true
 [include]
-	path = config.work
-[sendemail]
-	smtpEncryption = tls
-	smtpServer = smtp-mail.outlook.com
-	smtpUser = dolohow@outlook.com
-	smtpServerPort = 587
+  path = config.work
+[init]
+  defaultBranch = master
+[pager]
+  log  = perl /usr/share/git/diff-highlight/diff-highlight | less
+  show = perl /usr/share/git/diff-highlight/diff-highlight | less
+  diff = perl /usr/share/git/diff-highlight/diff-highlight | less
