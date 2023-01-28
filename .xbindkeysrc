@@ -6,7 +6,7 @@
 "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause"
    XF86AudioPlay
 
-"ddccontrol dev:/dev/i2c-11 -r 0x10 -W -2 0x10"
+"ddccontrol dev:/dev/i2c-9 -r 0x10 -W -2 0x10"
    Control+Alt + Down
-"ddccontrol dev:/dev/i2c-11 -r 0x10 -W +2 0x10"
+"ddccontrol dev:/dev/i2c-9 -r 0x10 -W +2 0x10"
    Control+Alt + Up
