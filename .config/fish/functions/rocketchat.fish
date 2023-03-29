@@ -9,6 +9,8 @@ function rocketchat --argument-names 'channel' 'markdown'
     set full_text (string join "\n" $full_text $text)
   end
 
+  set full_text (string replace -a '"' '\"' $full_text)
+
   curl $ROCKETCHAT_URL/api/v1/chat.postMessage \
     -X POST \
     -H "X-User-Id: $ROCKETCHAT_USER_ID" \
