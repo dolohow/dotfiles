@@ -1,5 +1,4 @@
 set -x EDITOR        vim
-set -x TERM          screen-256color
 set -x _JAVA_OPTIONS -Dawt.useSystemAAFontSettings=setting
 set -x ANDROID_HOME  ~/.android/sdk
 
