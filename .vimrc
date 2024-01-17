@@ -1,7 +1,7 @@
 ""
 " Basic setup
 ""
-
+set guifont=Hack\ 16
 set nocompatible                  " Use vim, no vi defaults
 set ruler                         " Show line and column number
 syntax enable                     " Turn on syntax highlighting allowing local overrides
@@ -86,48 +86,3 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 " vim-latexsuite plugin
 set grepprg=grep\ -nH\ $*
 let g:tex_flavor = "latex"
-
-""
-"" Vimplug
-""
-
-call plug#begin('~/.vim/plugged')
-
-Plug 'fatih/vim-go'
-Plug 'ap/vim-css-color'
-Plug 'kien/ctrlp.vim'
-Plug 'easymotion/vim-easymotion'
-Plug 'mattn/gist-vim' | Plug 'mattn/webapi-vim'
-Plug 'simnalamburt/vim-mundo'                        " Gundo fork
-  nnoremap <leader>g :GundoToggle<CR>
-Plug 'chrisbra/NrrwRgn'
-Plug 'scrooloose/nerdtree'
-  map <leader>n :NERDTreeToggle<CR>
-Plug 'majutsushi/tagbar'
-  map <leader>rt :TagbarToggle<CR>
-Plug 'airblade/vim-gitgutter'
-Plug 'bronson/vim-trailing-whitespace'
-Plug 'troydm/zoomwintab.vim'
-Plug 'heavenshell/vim-jsdoc'
-Plug 'digitaltoad/vim-jade'
-Plug 'editorconfig/editorconfig-vim'
-Plug 'godlygeek/tabular'
-Plug 'dag/vim-fish'
-Plug 'moll/vim-node'
-Plug 'VisIncr'
-Plug 'qpkorr/vim-bufkill'
-Plug 'derekwyatt/vim-fswitch'
-Plug 'derekwyatt/vim-protodef'
-Plug 'honza/vim-snippets' | Plug 'SirVer/ultisnips' | Plug 'Valloric/YouCompleteMe'
-  let g:UltiSnipsExpandTrigger='<c-\>'
-  let g:UltiSnipsJumpForwardTrigger='<c-n>'
-  let g:UltiSnipsJumpBackwardTrigger='<c-p>'
-Plug 'noahfrederick/vim-hemisu'
-Plug 'rking/ag.vim'
-Plug 'whatyouhide/vim-gotham'
-Plug 'scrooloose/syntastic'
-Plug 'xoria256.vim'
-
-call plug#end()
-
-colorscheme hemisu
