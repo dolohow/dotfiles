@@ -24,7 +24,7 @@ require("lazy").setup({
     end
   },
   { 'nvim-lualine/lualine.nvim',           opts = {} },
-  { 'lukas-reineke/indent-blankline.nvim', opts = {} },
+  { 'lukas-reineke/indent-blankline.nvim', main = "ibl", opts = {} },
   {
     'nvim-telescope/telescope.nvim',
     version = '*',
