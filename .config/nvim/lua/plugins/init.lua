@@ -1,5 +1,5 @@
 require("lazy").setup({
-  'github/copilot.vim',
+  --'github/copilot.vim',
   'tpope/vim-fugitive',
 
   -- Detect tabstop and shiftwidth automatically
