@@ -1,6 +1,6 @@
 # Basic
 set shell         = bash
-set editor        = vim
+set editor        = 'nvim -c "set spell" -c "set spelllang=pl"'
 set use_from      = yes
 set folder        = ~/.mail
 set mbox_type     = Maildir
