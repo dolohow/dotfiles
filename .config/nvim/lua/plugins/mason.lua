@@ -1,7 +1,7 @@
 local m = require 'mason-lspconfig'
 
 local servers = {
-  -- clangd = {},
+  clangd = {},
   -- gopls = {},
   pyright = {},
   -- rust_analyzer = {},
