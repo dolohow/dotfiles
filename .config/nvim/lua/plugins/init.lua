@@ -19,8 +19,13 @@ require("lazy").setup({
   { 'lewis6991/gitsigns.nvim', opts = {} },
   {
     'navarasu/onedark.nvim',
-    config = function()
-      vim.cmd('colorscheme onedark')
+    opts = {
+      style = 'dark',
+      toggle_style_list = { 'dark', 'light' },
+      toggle_style_key = '<leader>ts',
+    },
+    init = function()
+      require('onedark').load()
     end
   },
   { 'nvim-lualine/lualine.nvim',           opts = {} },
@@ -47,6 +52,12 @@ require("lazy").setup({
     'iamcco/markdown-preview.nvim',
     ft = 'markdown',
     build = 'cd app && yarn install'
+  },
+  {
+    "lervag/vimtex",
+    lazy = false,
+    init = function()
+    end
   },
   require 'plugins.debug',
   require 'plugins.autoformat',
